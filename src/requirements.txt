@@ -1,0 +1,13 @@
+python-dotenv
+requests
+pandas
+psycopg2-binary
+sqlalchemy
+streamlit
+langchain
+langgraph
+prophet
+statsmodels
+plotly
+openai
+uv
