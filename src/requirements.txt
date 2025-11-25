@@ -11,3 +11,5 @@ statsmodels
 plotly
 openai
 uv
+pandas
+psycopg2
