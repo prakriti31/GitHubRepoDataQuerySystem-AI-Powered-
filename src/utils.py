@@ -27,3 +27,9 @@ def clean_csv(file_path):
     df = pd.read_csv(file_path)
     df = df.where(pd.notnull(df), None)
     return df
+
+def flatten_user_column(df, col="user"):
+    if col in df.columns:
+        df[col+"_login"] = df[col].apply(lambda x: x["login"] if isinstance(x, dict) else None)
+        df.drop(columns=[col], inplace=True)
+    return df

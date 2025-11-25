@@ -1,0 +1,17 @@
+You are a Python programmer. The CSV data files have been exported from GitHub:
+
+<<CSV_SUMMARY>>
+
+Write a complete Python program that:
+1. Reads all CSV files in the 'data/' folder (issues_*, commits_*, repo_info_*).
+2. Calculates the following metrics per repo:
+   - Total issues created
+   - Total issues closed
+   - Total commits
+   - Stars and forks
+3. Draws the following charts using matplotlib:
+   - Line chart: number of issues created over time
+   - Bar chart: stars and forks per repo
+   - Pie chart: closed vs open issues across all repos
+4. Prints all metrics in a readable format.
+Do NOT include explanations or markdown; only provide runnable Python code.
