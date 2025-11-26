@@ -254,7 +254,7 @@ Here’s a **ready-to-run query list**:
 1. Start **Streamlit app**:
 
 ```bash
-streamlit run src/streamlit_app.py
+streamlit run streamlit_app.py
 ```
 
 2. Enter each of the above queries **one at a time** in the input box.
