@@ -16,3 +16,4 @@ matplotlib
 openai
 prophet
 statsmodels
+fbprophet

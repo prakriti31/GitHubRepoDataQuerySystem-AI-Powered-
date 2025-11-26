@@ -176,3 +176,95 @@ These will be used in Phase 3 to load data into PostgreSQL.
 * All inserts use `ON CONFLICT DO NOTHING` to avoid duplicates.
 
 ---
+
+Here’s a **ready-to-run query list**:
+
+---
+
+## **Textual / Tabular Output Queries**
+
+1. **Which Repo has the highest number of issues created?**
+   Input:
+   `Which repository has the most issues created in the last 2 months?`
+
+2. **Table: total number of issues created per repo per day of the week**
+   Input:
+   `Create a table showing the total number of issues created on Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and Sunday for every repository.`
+
+3. **Which day of the week has the highest total issues created (all repos)**
+   Input:
+   `Which day of the week has the highest number of issues created across all repositories?`
+
+4. **Which day of the week has the highest total issues closed (all repos)**
+   Input:
+   `Which day of the week has the highest number of issues closed across all repositories?`
+
+---
+
+## **Chart / Graph Output Queries**
+
+1. **Line chart of total issues created over time**
+   Input:
+   `Plot a line chart showing the total number of issues created over time for all repositories.`
+
+2. **Pie chart: percentage distribution of issues created**
+   Input:
+   `Create a pie chart showing the percentage distribution of issues created among all repositories.`
+
+3. **Bar chart: stars per repository**
+   Input:
+   `Create a bar chart showing the number of stars for each repository.`
+
+4. **Bar chart: forks per repository**
+   Input:
+   `Create a bar chart showing the number of forks for each repository.`
+
+5. **Bar chart: issues closed per week for each repo**
+   Input:
+   `Create a weekly bar chart showing the number of issues closed for each repository.`
+
+6. **Stacked bar chart: issues created vs closed per repository**
+   Input:
+   `Create a stacked bar chart showing issues created and issues closed for each repository.`
+
+---
+
+## **Forecast / Time Series Queries**
+
+7. **Prophet forecast: issues created per repo**
+   Input:
+   `Use Prophet to forecast the number of issues created for each repository over the next 30 days.`
+
+8. **Prophet forecast: issues closed per repo**
+   Input:
+   `Use Prophet to forecast the number of issues closed for each repository over the next 30 days.`
+
+9. **Statsmodels forecast: pull requests per repo**
+   Input:
+   `Use Statsmodels to forecast the number of pull requests for each repository over the next 30 days.`
+
+10. **Statsmodels forecast: commits per repo**
+    Input:
+    `Use Statsmodels to forecast the number of commits for each repository over the next 30 days.`
+
+---
+
+### ✅ How to Verify Each Query
+
+1. Start **Streamlit app**:
+
+```bash
+streamlit run src/streamlit_app.py
+```
+
+2. Enter each of the above queries **one at a time** in the input box.
+
+3. Check:
+
+* **Tabular queries** produce proper tables with numeric counts.
+* **Chart queries** render matplotlib/plotly figures correctly.
+* **Forecast queries** produce smooth time-series predictions with future values.
+* **No errors appear in Streamlit console**.
+
+
+
