@@ -88,7 +88,16 @@ When the user query involves forecasting with Statsmodels:
 6. If the user query is textual or tabular, do NOT generate plots.
 7. If the user query explicitly asks for a chart, plot it using matplotlib or plotly.
 8. Do NOT insert/update any tables in the database.
-9. Only output executable Python code.
+9. For ALL forecast queries:
+    - You MUST generate a chart
+    - The chart MUST be displayed in Streamlit using:
+         st.pyplot(fig)  OR  st.plotly_chart(fig)
+    - The chart MUST contain:
+         a) Historical data
+         b) 30-day forecast line
+         c) Clear title: "30-Day Forecast for <repository_name>"
+         d) X-axis = date, Y-axis = count
+10. Only output executable Python code.
 
 Return ONLY valid executable Python code.
 """
